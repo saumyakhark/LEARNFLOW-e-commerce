@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <title>Paw-Shop | Ecommerce Website</title>
+</head>
+
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="logo.png" alt="Paw-Shop Logo" width="120">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--- Banner -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning text-white p-5">
+                <div>
+                    <h1>Explore the Paw-Shop!</h1>
+                    <p class="mb-4"><em>A shop for your pet.<br>It's where you find your pet's love.</em></p>
+                    <a href="products.html" class="btn btn-light btn-lg">Shop Now &#10142;</a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-image"></div>
+        </div>
+    </section>
+    
+    <!--- Featured Products -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product1.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Electric Spinning Cat Toy</h5>
+                        <p class="card-text">Rs. 400.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Electrci Spinning Cat Toy">
+                            <input type="hidden" name="price" value="400.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product2.jpg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Cat House</h5>
+                        <p class="card-text">Rs. 899.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Cat House">
+                            <input type="hidden" name="price" value="899.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product3.png" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Paw-Necklace</h5>
+                        <p class="card-text">Rs. 299.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Paw-Necklace">
+                            <input type="hidden" name="price" value="299.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product4.jpeg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">Water Fountain</h5>
+                        <p class="card-text">Rs.1000.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Water Fountain">
+                            <input type="hidden" name="price" value="1000.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!--- New Product -->
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <img src="new-product.jpeg" class="img-fluid" alt="New Product">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <p>Our Newest Product Offer</p>
+                    <h1>Paw-Travel</h1>
+                    <small>Take your Paw to their regular vet visits or take them with you for travel comfortably with our Paw-Travel at Rs. 599.00</small>
+                    <br>
+                    <form action="cart.html" method="GET">
+                        <input type="hidden" name="product" value="Paw-Travel">
+                        <input type="hidden" name="price" value="599.00">
+                        <input type="hidden" name="quantity" value="1">
+                        <input type="submit" class="btn btn-warning" value="Add to Cart">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="text-center">Contact Us</h2>
+            </div>
+            <div class="col-md-8 mx-auto border rounded p-4 shadow-sm">
+                <!-- Assuming you might want a form for the users to fill out -->
+                <form>
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="contactMessage" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   <!--- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="logo.png" alt="CoolGadgets Logo" class="mb-2" width="100">
+                    <p>Discover the Love <br>with Paw-Shop </p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="products.html" class="text-decoration-none text-light">Products</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Coupons</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Blog Post</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Return Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/_saumya_kharkwal_/" target="_blank" class="text-decoration-none text-light">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCskLQexNZWodxD45Wq-zPtg" target="_blank" class="text-decoration-none text-light">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">&copy; Copyright 2024 - Paw-Shop</div>
+        </div>
+    </footer>
+</body>
+</html>
